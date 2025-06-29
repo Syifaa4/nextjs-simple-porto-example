@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors'); 
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -8,9 +9,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        gray: {
-          600: '#4B5563', // Tambahkan ini biar error-nya hilang
-        },
+        gray: colors.gray, // pakai semua shades bawaan Tailwind        
       },
     },
   },
